@@ -18,19 +18,17 @@ const Post = ({getPost, match, post: {post, loading}, users: {user, isAuthentica
         deletePost(id, history)
     }
 
-   
-
     return loading ? <Loader /> : (
         post && post ? <div className="post-container">
         <div className="icon-container">
-            <p><Link to="/" style={{display: 'flex'}}><i class="arrow alternate circle left icon"></i></Link></p>
+            <p><Link to="/" style={{display: 'flex'}}><i className="material-icons prefix"></i> Back</Link></p>
             {user && user._id && post && post.createdBy._id && post.createdBy._id === user._id ? (
                 <div style={{display: 'flex'}}>
                 <p className="red-color del-icon">
                     <i className="trash icon" onClick={() => deleteHandler(post._id)}></i>
                 </p>
                 <p className="edit-icon">
-                    <Link to={`/post/edit/${post._id}`}><i class="edit icon"></i></Link>
+                    <Link to={`/post/edit/${post._id}`}><i className="edit icon"></i></Link>
                 </p>
             </div>
             ) : ''}
