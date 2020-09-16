@@ -1,2 +1,1 @@
-# cms-blog
-This is repository for a task given by Nyx Wolves company for recruitment
+[API DOCUMENTATION CAN BE FOUND HERE RUN IT ON POSTMAN](https://documenter.getpostman.com/view/11110002/TVK8c1Jq)
