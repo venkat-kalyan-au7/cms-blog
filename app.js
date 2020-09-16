@@ -22,7 +22,6 @@ app.use('/user',userRoutes)
 app.use('/category', categoryRoutes)
 app.use('/post',postRoutes)
 
-
 if(process.env.NODE_ENV == "production"){
     app.use(express.static('client/build'))
     const path = require('path');
@@ -30,4 +29,7 @@ if(process.env.NODE_ENV == "production"){
         res.sendFile(path.resolve(__dirname, "client", "build", 'index.html'))
     })
 }
+
+
+module.exports =app
 
