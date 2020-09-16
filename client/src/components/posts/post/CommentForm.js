@@ -43,18 +43,16 @@ const CommentForm = ({postComment,deleteComment, post: {post}, users: {user, isA
                             <img className="comment-user" src={User} alt=""/>
                             <div className="comment-text-container">
                                 <p className="comment-text">{comment.text}</p>
-                              
-                                <span><p className="comment-name">{comment.name}</p></span>
+                                <p className="comment-name">{comment.name}</p>
                             </div>
                             {user && user._id && comment && user._id === comment.postedBy ?  
-                            
                                 <p className="red-color" onClick={() => deleteComment(post._id, comment._id)}><i className="trash icon"></i></p>
                             : ''}
                         </div>
                     ))
                 }
             </div>
-            </>): <h4 className="centered login-text">Please Login to Like or Comment</h4>}
+            </>): <h5 className="centered login-text">please login to like or comment</h5>}
             
         </div>
     )

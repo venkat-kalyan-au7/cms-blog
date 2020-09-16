@@ -34,7 +34,7 @@ const CategoryPosts = ({match , getCategoryPosts, categoryPostsData: {loading, c
                     <div className="posts-content">
                         <p>{post.content.slice(0, 40) + '....'}</p>
                         <h6 className="post-date-category">
-                            {post.category} | By {post.createdBy.name} 
+                            {post.category} | By {post.createdBy.name}
                         </h6>
                     </div>
                 </div>
