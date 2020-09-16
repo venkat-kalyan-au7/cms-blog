@@ -25,7 +25,7 @@ router.get('/get-category/:catId',getCategory)
 router.put('/edit-category/:catId', auth,editCategory)
 
 // delete category
-router.delete('/git', auth,deleteCategory)
+router.delete('/delete-category/:catId', auth,deleteCategory)
 
 
 module.exports = router
