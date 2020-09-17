@@ -34,7 +34,7 @@ const Login = ({login, isAuthenticated}) => {
                 <form onSubmit={submitHandler} noValidate>
                 <div className="row">
                     <div className="input-field col s12">
-                        <i className="material-icons prefix"></i>
+                      
                         <input 
                             id="email" 
                             name="email" 
@@ -47,7 +47,7 @@ const Login = ({login, isAuthenticated}) => {
                         {/* <span class="helper-text" data-error="wrong" data-success="right">Helper text</span> */}
                     </div>
                     <div className="input-field col s12">
-                        <i className="material-icons prefix"></i>
+                      
                         <input 
                             id="password" 
                             type="password" 
