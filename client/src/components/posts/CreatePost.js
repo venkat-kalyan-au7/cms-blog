@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { createPost } from '../../action/post'
 import { getCategories } from '../../action/category'
 import { connect } from 'react-redux';
+import M from 'materialize-css/dist/js/materialize.min.js'
 import { withRouter } from 'react-router-dom';
 
 const CreatePost = ({createPost, getCategories, categories, history}) => {
@@ -110,10 +111,10 @@ const CreatePost = ({createPost, getCategories, categories, history}) => {
                             />
                         </div>
                         <div className="file-path-wrapper">
-                            <input className="file-path validate" type="text" placeholder="Upload files" />
+                            <input className="file-path validate" type="text" placeholder="Upload one or more files" />
                         </div>
                         <div className="img-preview">
-                            {previewUrl ? <img src={previewUrl} alt="preview" width="100%" height="130" /> : 'Please Select Image' } 
+                            {previewUrl ? <img src={previewUrl} alt="preview" width="100%" height="130" /> : 'please select image' } 
                         </div>
                     </div>
                     <div className="input-field col s12">
