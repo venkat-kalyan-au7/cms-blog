@@ -32,8 +32,8 @@ const Navbar = ({ auth: {isAuthenticated, loading}, logout }) => {
     return (
         <nav className="nav-spacing #42a5f5 blue lighten-1">
             <div className="nav-wrapper">
-                <span href="#!" className="brand-logo left"><Link to="/"><i class="leanpub icon"></i></Link></span>
-                <span href="#!" data-target="mobile-demo" className="sidenav-trigger right"><i class="align right icon"></i></span>
+                <span href="#!" className="brand-logo left"><Link to="/">Blog</Link></span>
+                <span href="#!" data-target="mobile-demo" className="sidenav-trigger right"><i className="material-icons menu-icon">menu</i></span>
             <ul  id="nav-mobile" className="right hide-on-med-and-down">
                 { !loading && (<Fragment>{isAuthenticated ? authLink : guestLink}</Fragment>)}
             </ul>
