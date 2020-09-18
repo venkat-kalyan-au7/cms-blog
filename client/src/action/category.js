@@ -1,7 +1,7 @@
 import { GET_CATEGORIES, CATEGORY_FAILED, GET_CATEGORIES_POSTS, CREATE_CATEGORY, DELETE_CATEGORY, GET_CATEGORY , EDIT_CATEGORY} from "./types";
 import axios from 'axios';
 import { setAlert } from './alert';
-axios.defaults.baseURL = process.env.REACT_APP_BE_URL || 'http://localhost:5000/';
+axios.defaults.baseURL = 'https://cms-blog-kalyan.herokuapp.com/' || 'http://localhost:5000/';
 
 // get categories
 export const getCategories = () => async dispatch => {
