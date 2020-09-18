@@ -21,7 +21,7 @@ const Post = ({getPost, match, post: {post, loading}, users: {user, isAuthentica
     return loading ? <Loader /> : (
         post && post ? <div className="post-container">
         <div className="icon-container">
-            <p><Link to="/" style={{display: 'flex'}}><i className="material-icons prefix">keyboard_backspace</i> Back</Link></p>
+            <p><Link to="/" style={{display: 'flex'}}><i className="material-icons prefix"></i> Back</Link></p>
             {user && user._id && post && post.createdBy._id && post.createdBy._id === user._id ? (
                 <div style={{display: 'flex'}}>
                 <p className="red-color del-icon">

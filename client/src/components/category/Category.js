@@ -30,8 +30,8 @@ const Category = ({category: {loading, categories, error}, deleteCategory}) => {
                             <tr key={category._id}>
                                 <td>{index + srno}</td>
                                 <td>{category.catname}</td>
-                                <td onClick={() => deleteCategory(category._id)}><i className="material-icons prefix red-color">delete</i></td>
-                                <td><Link to={`/category/edit/${category._id}`}><i className="material-icons prefix">edit</i></Link></td>
+                                <td onClick={() => deleteCategory(category._id)}><i className="material-icons prefix red-color">Delete</i></td>
+                                <td><Link to={`/category/edit/${category._id}`}><i className="material-icons prefix">Edit</i></Link></td>
                             </tr>
                         )) : <p className="no-post">No Category Added</p>
                     }
