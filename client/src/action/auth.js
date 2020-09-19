@@ -2,7 +2,7 @@ import { REGISTER_SUCCESS, REGISTER_FAIL, USER_LOADED, AUTH_ERROR, LOGIN_SUCCESS
 import axios from 'axios';
 import {setAlert} from '../action/alert'
 import setAuthToken from '../utils/setAuthToken';
-axios.defaults.baseURL = process.env.REACT_APP_BE_URL || 'http://localhost:5000/';
+axios.defaults.baseURL = 'https://cms-blog-kalyan.herokuapp.com/'|| 'http://localhost:5000/';
 // load user
 export const loadUser = () => async dispatch => {
     if(localStorage.token){

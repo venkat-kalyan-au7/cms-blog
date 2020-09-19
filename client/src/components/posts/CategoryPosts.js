@@ -4,7 +4,7 @@ import { getCategoryPosts } from '../../action/category';
 import { connect } from 'react-redux';
 import Loader from '../layout/Loader';
 import {Link } from 'react-router-dom';
-let url = process.env.REACT_APP_BE_URL || 'http://localhost:5000/';
+let url = 'https://cms-blog-kalyan.herokuapp.com/' || 'http://localhost:5000/';
 
 const CategoryPosts = ({match , getCategoryPosts, categoryPostsData: {loading, categoryPosts}}) => {
     let catName = match.params.category
@@ -34,7 +34,7 @@ const CategoryPosts = ({match , getCategoryPosts, categoryPostsData: {loading, c
                     <div className="posts-content">
                         <p>{post.content.slice(0, 40) + '....'}</p>
                         <h6 className="post-date-category">
-                            {post.category} | By {post.createdBy.name} , published at 25/10/15
+                            {post.category} | By {post.createdBy.name} 
                         </h6>
                     </div>
                 </div>

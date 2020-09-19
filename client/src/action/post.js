@@ -2,7 +2,7 @@ import { CREATE_POST, POST_FAILED, GET_POSTS, GET_POST, DELETE_POST, EDIT_POST, 
 import axios from 'axios';
 import { setAlert } from './alert';
 const fs = require('fs');
-axios.defaults.baseURL = process.env.REACT_APP_BE_URL || 'http://localhost:5000/';
+axios.defaults.baseURL = 'https://cms-blog-kalyan.herokuapp.com/' || 'http://localhost:5000/';
 
 // create posts
 export const createPost = ({title, content, category, file}, history) => async dispatch => {

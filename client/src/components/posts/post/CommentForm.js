@@ -46,7 +46,7 @@ const CommentForm = ({postComment,deleteComment, post: {post}, users: {user, isA
                                 <p className="comment-name">{comment.name}</p>
                             </div>
                             {user && user._id && comment && user._id === comment.postedBy ?  
-                                <p className="red-color" onClick={() => deleteComment(post._id, comment._id)}><i className="del-comment material-icons prefix">delete</i></p>
+                                <p className="red-color" onClick={() => deleteComment(post._id, comment._id)}><i className="del-comment material-icons prefix">Delete</i></p>
                             : ''}
                         </div>
                     ))
