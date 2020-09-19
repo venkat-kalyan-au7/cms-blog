@@ -31,7 +31,7 @@ const MainPage = ({ getPosts, post: {loading, posts}, getCategories, auth }) => 
             <AllPosts posts={posts} />
             {
                 auth && auth ? <div className="post-add-btn">
-                <Link to="/create/post"><span className="btn-floating btn-large waves-effect waves-light red add-btn  #42a5f5 blue lighten-1"><i className="material-icons">add</i></span></Link>
+                <Link to="/create/post"><span className="btn-floating btn-large waves-effect waves-light red add-btn  #42a5f5 blue lighten-1"><i className="material-icons">Add</i></span></Link>
                 </div> : ''
             }
         </div>

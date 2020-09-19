@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 import { getPost, deletePost } from '../../../action/post'
 import Loader from '../../layout/Loader'
 import { Link } from 'react-router-dom';
-let url = process.env.REACT_APP_BE_URL || 'http://localhost:5000/';
+let url = 'https://cms-blog-kalyan.herokuapp.com/' || 'http://localhost:5000/';
 
 const Post = ({getPost, match, post: {post, loading}, users: {user, isAuthenticated},loadingUser, deletePost, history}) => {
 
@@ -21,14 +21,14 @@ const Post = ({getPost, match, post: {post, loading}, users: {user, isAuthentica
     return loading ? <Loader /> : (
         post && post ? <div className="post-container">
         <div className="icon-container">
-            <p><Link to="/" style={{display: 'flex'}}><i className="material-icons prefix">keyboard_backspace</i> Back</Link></p>
+            <p><Link to="/" style={{display: 'flex'}}><i className="material-icons prefix"></i> Back</Link></p>
             {user && user._id && post && post.createdBy._id && post.createdBy._id === user._id ? (
                 <div style={{display: 'flex'}}>
                 <p className="red-color del-icon">
-                    <i className="material-icons prefix" onClick={() => deleteHandler(post._id)}>delete</i>
+                    <i className="material-icons prefix" onClick={() => deleteHandler(post._id)}>Delete</i>
                 </p>
                 <p className="edit-icon">
-                    <Link to={`/post/edit/${post._id}`}><i className="material-icons prefix">edit</i></Link>
+                    <Link to={`/post/edit/${post._id}`}><i className="material-icons prefix">Edit</i></Link>
                 </p>
             </div>
             ) : ''}
