@@ -25,10 +25,10 @@ const Post = ({getPost, match, post: {post, loading}, users: {user, isAuthentica
             {user && user._id && post && post.createdBy._id && post.createdBy._id === user._id ? (
                 <div style={{display: 'flex'}}>
                 <p className="red-color del-icon">
-                    <i className="material-icons prefix" onClick={() => deleteHandler(post._id)}>DELETE</i>
+                    <i className="material-icons prefix" onClick={() => deleteHandler(post._id)}>Delete</i>
                 </p>
                 <p className="edit-icon">
-                    <Link to={`/post/edit/${post._id}`}><i className="material-icons prefix">EDIT</i></Link>
+                    <Link to={`/post/edit/${post._id}`}><i className="material-icons prefix">Edit</i></Link>
                 </p>
             </div>
             ) : ''}
