@@ -48,3 +48,8 @@
 **TODO**
 
  - Fix NavBar According ScreenSize
+
+![DESKTOP](https://github.com/venkat-kalyan-au7/cms-blog/blob/master/Screenshot%20%2853%29.png)
+
+
+![MOBILE](https://github.com/venkat-kalyan-au7/cms-blog/blob/master/Screenshot%20%2854%29.png)
