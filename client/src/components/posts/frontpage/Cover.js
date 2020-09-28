@@ -6,7 +6,7 @@ import { getPosts } from '../../../action/post';
 import { connect } from 'react-redux';
 import Loader from '../../layout/Loader';
 import { Link } from 'react-router-dom';
-let url = process.env.REACT_APP_BE_URL || 'http://localhost:5000/';
+let url = 'https://cms-blog-kalyan.herokuapp.com/' || 'http://localhost:5000/';
 
 const Cover = ({ posts, loading}) => {
     let post;

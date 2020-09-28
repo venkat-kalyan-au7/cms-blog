@@ -1,3 +1,4 @@
+  
 import React, {useState} from 'react';
 import {Link, Redirect } from 'react-router-dom'
 import PropTypes from 'prop-types';
@@ -34,7 +35,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                 <form onSubmit={submitHandler}>
                 <div className="row">
                     <div className="input-field col s12">
-
+                       
                         <input 
                             id="email" 
                             name="email" 
@@ -46,7 +47,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                         {/* <span class="helper-text" data-error="wrong" data-success="right">Helper text</span> */}
                     </div>
                     <div className="input-field col s12">
-
+                       
                         <input 
                             id="name" 
                             name="name" 
@@ -57,7 +58,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                         <label htmlFor="name">Name</label>
                     </div>
                     <div className="input-field col s12">
-                    
+                        
                         <input 
                             id="password" 
                             type="password" 
