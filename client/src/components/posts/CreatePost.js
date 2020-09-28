@@ -111,7 +111,7 @@ const CreatePost = ({createPost, getCategories, categories, history}) => {
                             />
                         </div>
                         <div className="file-path-wrapper">
-                            <input className="file-path validate" type="text" placeholder="Upload one or more files" />
+                            <input className="file-path validate" type="text" placeholder="Upload Image files" />
                         </div>
                         <div className="img-preview">
                             {previewUrl ? <img src={previewUrl} alt="preview" width="100%" height="130" /> : 'please select image' } 

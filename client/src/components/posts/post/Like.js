@@ -14,7 +14,7 @@ const Like = ({likeNum, auth:{loading, isAuthenticated}, likePost, post: {post}}
         <div style={{display: 'flex'}}>
             {isAuthenticated ? (
                 <>
-                    <p className="red-color" onClick={() => likeHandler()}><i className="material-icons prefix">LIKE POST</i></p>
+                    <h4 className="blue-color" onClick={() => likeHandler()}><i class="thumbs up icon"></i></h4>
                     <p style={{marginLeft: '8px'}}>{likeNum.length}</p>
                 </> ): null
             }

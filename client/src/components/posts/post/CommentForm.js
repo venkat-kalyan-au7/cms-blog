@@ -52,7 +52,7 @@ const CommentForm = ({postComment,deleteComment, post: {post}, users: {user, isA
                     ))
                 }
             </div>
-            </>): <p className="centered login-text">please login to like or comment</p>}
+            </>): <h6 className="centered login-text">Please login to like or comment</h6>}
             
         </div>
     )
